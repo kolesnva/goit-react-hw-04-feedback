@@ -10,7 +10,7 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
           <Button
             type="button"
             name={option}
-            onClick={onLeaveFeedback}
+            onClick={() => onLeaveFeedback({ option })}
             key={index}
           >
             {option}
